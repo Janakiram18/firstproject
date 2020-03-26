@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ff6f61;
+}
+.navigation a {
+    text-decoration: none;
+    text-align: right;
+    color: white;
+}
+.navigation a:hover{
+    text-shadow: 3px 3px grey;
+}
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f34;
+
+}
+.loader{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid white;
+    animation: loader infinite ease;
+}
+.loader-inner{
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    animation: loader-inner 2s infinite ease-in;
+}
+.Mainheading{
+    padding-left: 40%;
+    padding-top: 15%;
+}
+.Mainheading h1{
+    font-family: Courier, monospace;
+    color:white;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+.example input{
+    width: 600px;
+    height: 30px;
+    margin-left: 380px;
+    border-radius: 25px;
+    text-indent: 10px;
+}
+.example input:focus{
+    outline-width: 0px;
+}
+.button{
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.button:hover{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    border-radius: 10px;
+    transform: translateY(-1px);
+}
+.languages{
+    padding-left: 388px;
+
+}
+.languages a{
+    text-decoration: none;
+    color: navy;
+    padding: right;
+    display: inline;
+}
+.footer{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:white;
+   color: white;
+   text-align: center;
+   width: 100%;
+   height: 40px;
+}
+.footer p{
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bolder;    
+}
+.footer:hover{
+    background-color: skyblue;
+}
+@-webkit-keyframes glow {
+    from {
+     color: darkmagenta;
+   text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+ }
+ 
+ to {
+    color: black;
+   text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+ }
+}
